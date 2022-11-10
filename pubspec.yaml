@@ -1,4 +1,4 @@
-name: Bazar
+name: bazar
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
@@ -72,13 +72,13 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  assets:
-    - assets/images/
-    - assets/videos/
-    - assets/audios/
-    - assets/lottie_animations/
-    - assets/rive_animations/
-    - assets/pdfs/
+  # assets:
+  #   - assets/images/
+  #   - assets/videos/
+  #   - assets/audios/
+  #   - assets/lottie_animations/
+  #   - assets/rive_animations/
+  #   - assets/pdfs/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

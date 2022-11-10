@@ -6,8 +6,8 @@ import 'package:google_fonts/google_fonts.dart';
 const primaryBackground = Color.fromARGB(255, 255, 255, 255);
 const secondaryBackground = Color.fromARGB(255, 255, 255, 255);
 
-const primaryColor = Color(0xFF017717);
-const secondaryColor = Color(0xFF017717);
+const primaryColor = Color.fromARGB(255, 255, 255, 255);
+const secondaryColor = Color.fromARGB(255, 0, 0, 0);
 const tertiaryColor = Color.fromARGB(255, 151, 30, 30);
 
 const primaryText = Color.fromARGB(255, 0, 0, 0);

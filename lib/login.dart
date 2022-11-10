@@ -1,7 +1,8 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, duplicate_ignore
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, duplicate_ignore, unused_import, library_private_types_in_public_api
 
-import 'package:Bazar/HomePage.dart';
-import 'package:Bazar/constant.dart';
+import 'package:bazar/HomePage.dart';
+import 'package:bazar/Signup.dart';
+import 'package:bazar/constant.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
@@ -165,11 +166,11 @@ class _LoginWidgetState extends State<LoginWidget>
                           ),
                         ),
                       ),
-                      
                       Align(
                         alignment: AlignmentDirectional(-0.94, 0.51),
                         child: Padding(
                           padding: EdgeInsetsDirectional.fromSTEB(20, 0, 20, 0),
+                          // ignore: deprecated_member_use
                           child: FlatButton(
                               onPressed: () {
                                 Navigator.push(
@@ -189,12 +190,12 @@ class _LoginWidgetState extends State<LoginWidget>
                           padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
                           child: InkWell(
                             onTap: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => HomePageWidget()),
-                                );
-                              },
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => HomePageWidget()),
+                              );
+                            },
                             child: Text(
                               'Forget Password ?',
                               style: bodyText1,
@@ -216,12 +217,12 @@ class _LoginWidgetState extends State<LoginWidget>
                         alignment: AlignmentDirectional(0, 0.86),
                         child: InkWell(
                           onTap: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => HomePageWidget()),
-                                );
-                              },
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => SignupWidget()),
+                            );
+                          },
                           child: Text('Sign up !', style: bodyText1),
                         ),
                       ),

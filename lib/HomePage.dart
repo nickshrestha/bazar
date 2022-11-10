@@ -1,13 +1,10 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, file_names, library_private_types_in_public_api, depend_on_referenced_packages
 
-import 'package:Bazar/constant.dart';
-import 'package:Bazar/login.dart';
+import 'package:bazar/constant.dart';
+import 'package:bazar/login.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
-import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class HomePageWidget extends StatefulWidget {
   const HomePageWidget({Key? key}) : super(key: key);
@@ -56,14 +53,12 @@ class _HomePageWidgetState extends State<HomePageWidget>
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        SelectionArea(
-                            child: Text('Nikhil Shrestha', style: bodyText1)),
-                        SelectionArea(
-                            child: Text(
+                        Text('Nikhil Shrestha', style: bodyText1),
+                        Text(
                           'Application Developer',
                           textAlign: TextAlign.start,
                           style: bodyText1,
-                        )),
+                        ),
                       ],
                     ),
                   ],
@@ -96,7 +91,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                         size: 25,
                       ),
                     ),
-                    SelectionArea(child: Text('Setting', style: bodyText1)),
+                    Text('Setting', style: bodyText1),
                   ],
                 ),
                 InkWell(
@@ -119,7 +114,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                           size: 25,
                         ),
                       ),
-                      SelectionArea(child: Text('Logout', style: bodyText1)),
+                      Text('Logout', style: bodyText1),
                     ],
                   ),
                 ),
